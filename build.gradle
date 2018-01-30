@@ -1,0 +1,20 @@
+buildscript {
+    repositories {
+        maven { url "http://platform-acceleration-lab-maven.s3.amazonaws.com" }
+        jcenter()
+    }
+
+    dependencies {
+        classpath "io.pivotal.pal.assignments:assignments-plugin:+"
+    }
+}
+
+apply plugin: "io.pivotal.pal.assignments.plugin"
+
+assignments {
+    apiUrl = "https://caddy.pal.pivotal.io"
+    email = "angelo.miranda@mastercard.com"
+    cohortIdentifier = 349802161
+}
+
+defaultTasks "tasks"
