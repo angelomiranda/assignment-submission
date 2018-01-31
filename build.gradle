@@ -13,7 +13,10 @@ apply plugin: "io.pivotal.pal.assignments.plugin"
 
 assignments {
     apiUrl = "https://caddy.pal.pivotal.io"
-    email = "angelo.miranda@mastercard.com"
+    emails = [
+        "angelo.miranda@mastercard.com",
+        "sanjay.kumar2@mastercard.com"
+    ]
     cohortIdentifier = 349802161
 }
 
